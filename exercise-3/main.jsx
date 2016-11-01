@@ -11,6 +11,9 @@ var employeeData = [
 // Create an EmployeeRow element to render a row of information for an employee
 var EmployeeRow = React.createClass({
     // Define rendering function
+    render: function() {
+
+    }
 });
 
 // Create an EmployeeTable element in which to render your EmployeeRows
@@ -28,6 +31,7 @@ var EmployeeTable = React.createClass({
 
 
                         {// Enter employee rows here!!!!
+                          this.props.employeeData.map(function())
                         }
 
 
@@ -39,3 +43,4 @@ var EmployeeTable = React.createClass({
 });
 
 // Render your component in the `main` section
+ReactDom.render(<EmployeeTable employeeData={employeeData})
